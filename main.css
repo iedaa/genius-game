@@ -1,0 +1,159 @@
+@font-face {
+    font-family: nintendoDS;
+    src: url(
+        './src/resources//fonts/Nintendo-DS-BIOS.ttf'
+    );
+}
+
+html {
+    background-color: #fff6db;
+    cursor: url("./src/resources/cursor.png"), auto;
+    max-width: 100%;
+    max-height: 100%;
+    color: #ff7db1;
+    font-size: 18px;
+    font-family: nintendoDS;
+    text-align: center;
+}
+
+a{
+  font-style: normal;
+  color: #ff7db1;   
+  text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.footer p{
+    margin: 5px;
+}
+
+.footer hr{
+    color: #ff7db1;
+    background-color: #ff7db1;
+    border: 0 none;
+    height: 1px;
+}
+
+ .game {
+     max-width: 50%;
+     margin: 0 auto;
+     display:inline-block
+}
+
+.genius {
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    margin: 0 auto;
+    padding-top: 10px;
+    display: grid;
+    width: 128px;
+    height: 128px;
+    border-radius: 10px;
+    background-color: #ff7db1;
+}
+
+.green {
+    margin: 0 auto;
+    grid-area: verde;
+    border: 2px solid #fff6db;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color:#94d9a7;
+    cursor:pointer;
+    
+    transition: border-radius 1s;
+
+}
+
+.green:hover{
+    border-radius: 25px;
+}
+
+.red {
+    margin: 0 auto;
+    grid-area: vermelho;
+    border: 2px solid #fff6db;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color:#ffafa2;
+    cursor:pointer;
+    
+    transition: border-radius 1s;
+
+}
+
+.red:hover{
+    border-radius: 25px;
+}
+
+.yellow {
+    margin: 0 auto;
+    grid-area: amarelo;
+    border: 2px solid #fff6db;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color:#ffe37e;
+    cursor:pointer;
+    
+    transition: border-radius 1s;
+
+}
+
+.yellow:hover{
+    border-radius: 25px;
+}
+
+.blue {
+    margin: 0 auto;
+    grid-area: azul;
+    border: 2px solid #fff6db;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color:#b5d5eb;
+    cursor:pointer;
+    
+    transition: border-radius 1s;
+
+}
+
+.blue:hover{
+    border-radius: 25px;
+}
+
+.dialogue {
+    
+    margin: 0 auto;
+    padding: 12px;
+    max-width: 320px;
+    height: 128px;
+    min-height: 144px;
+    border: solid 4px #ff7db1;
+    border-top: solid 30px #ff7db1;
+    background-color: #fff6db;
+
+}
+
+.title {
+    position: relative;
+    bottom: 33px;
+    color: #fff6db;
+}
+
+button {
+    color: #fff6db;
+    background-color: #ff7db1;
+    padding: 5px 20px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    font-family: nintendoDS;
+    font-size: 16px;
+}
