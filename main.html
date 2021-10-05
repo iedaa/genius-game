@@ -6,17 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genius</title>
+    <script>
+
+        let floodFilter = 0
+
+        function startTheme(){
+
+            if(floodFilter) return
+
+            floodFilter=1
+            theme = new Audio('./src/resources/songs/theme.mp3');
+            theme.loop = true;
+            theme.volume = 0.75
+            theme.play();
+            console.log(theme)
+
+        }
+
+    </script>
 </head>
 <body>
 
-    <a href>Verificar placar de líderes</a><br><br>
-    <a href>Sobre</a><br><br>
-    <a href>Github</a>
+    <br>
+    <br>
+    <b>
+    <a href>About</a><br><br>
+    <a href='https://github.com/iedaa/genius-game' target="_blank">Github</a>
+    </b>
 
     <br><br>
 
     <!--BODY HERE-->
-    <img src='./src/resources/machineguy.png' style="width: 205px; height: 292px;"><br>
+    <img src='./src/resources/machineguy.png' style="width: 205px; height: 292px;" unselectable="on"><br>
 
     <!--END OF BODY HERE-->
 
@@ -25,16 +46,16 @@
         <div class="dialogue">
             <div class="title">FATAL ERROR</div>
             <br>
-            <div class="chat">[Machine Man]: Don't mind the error stuff. It's just an excuse for us to play.</div>
+            <div class="chat">[Machine Man]: Hey there! I'm the <u>Machine Man</u> and I'll be your opponent. Let's have some fun!</div>
             <br>
-            <button>
+            <button id="start-button" onclick="startTheme()">
                 START
             </button>
             <br>
             <p>
-                <img src='./src/resources/heart.png' width=16 height=16>
-                <img src='./src/resources/heart.png' width=16 height=16>
-                <img src='./src/resources/heart.png' width=16 height=16>
+                <img src='./src/resources/heart.png' id="heart-one" width=16 height=16>
+                <img src='./src/resources/heart.png' id="heart-two" width=16 height=16>
+                <img src='./src/resources/heart.png' id="heart-three" width=16 height=16>
             </p>
         </div>
 
@@ -53,7 +74,6 @@
     </div>
     
     <br><br>
-    
 
     <div class='footer'>
 
@@ -68,10 +88,15 @@
         <br>
 
         </p>
-        This game was brought to you by Iêda at <a href=''>https://github.com/iedaa/genius-game</a></b>
+        This game was brought to you by Iêda at <a href='https://github.com/iedaa/genius-game' target="_blank">https://github.com/iedaa/genius-game</a></b>
+        </p>
+         </p>
+        Song by <a href='https://www.youtube.com/channel/UC1fgzeWMwx6j6gxf8Rsd32A' target="_blank">8 Bit and Chill</a></b>
         </p>
 
     </div>
+
+    <script type="text/javascript" src="game.js"></script>
 
 </body>
 </html>
